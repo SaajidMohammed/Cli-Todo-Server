@@ -1,0 +1,39 @@
+# --- General ---
+node_modules/
+.DS_Store
+.env
+*.log
+
+# --- Backend ---
+backend/.env
+backend/logs/
+
+# --- CLI Client ---
+# Ignore the file where the CLI stores the user's JWT locally
+cli-client/config.json
+cli-client/.todo-config.json
+
+# --- Mobile (React Native / Expo) ---
+mobile-app/.expo/
+mobile-app/dist/
+mobile-app/web-build/
+mobile-app/npm-debug.log*
+mobile-app/yarn-error.log*
+
+# Expo Router & Metro cache
+mobile-app/.app-config.json
+mobile-app/.metro/
+
+# Android/iOS build artifacts (if you run prebuild)
+mobile-app/android/
+mobile-app/ios/
+mobile-app/*.jks
+mobile-app/*.p12
+mobile-app/*.key
+mobile-app/*.mobileprovision
+
+# --- Machine Learning (If you add your ML models later) ---
+*.ipynb_checkpoints
+data/*.csv
+models/*.h5
+models/*.pkl
